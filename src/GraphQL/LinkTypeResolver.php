@@ -3,11 +3,10 @@
 namespace SilverStripe\Link\GraphQL;
 
 use GraphQL\Type\Definition\ResolveInfo;
-use SilverStripe\GraphQL\Schema\Resolver\DefaultResolverProvider;
 use SilverStripe\Link\Type\Registry;
 use SilverStripe\Link\Type\Type;
 
-class LinkTypeResolver extends DefaultResolverProvider
+class LinkTypeResolver
 {
     public static function resolve($object, array $args, $context, ResolveInfo $info)
     {
