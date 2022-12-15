@@ -102,7 +102,7 @@ class Link extends DataObject implements JsonData, Type
         return $jsonData;
     }
 
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $typeKey = Registry::singleton()->keyByClassName(static::class);
         if (empty($typeKey)) {
